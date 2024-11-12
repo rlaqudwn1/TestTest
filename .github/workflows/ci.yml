@@ -20,3 +20,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew clean build
+      
+      ## 테스트
