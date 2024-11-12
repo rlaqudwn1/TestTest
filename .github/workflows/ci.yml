@@ -22,3 +22,5 @@ jobs:
       run: ./gradlew clean build
       
       ## 테스트
+      ## 테스트들
+      ## 테스트들
