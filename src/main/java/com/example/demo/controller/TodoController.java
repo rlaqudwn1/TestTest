@@ -30,8 +30,7 @@ public class TodoController {
     }
 
     @DeleteMapping("")
-    public ResponseEntity<?> delete(@RequestParam("id") Long id) {
+    public ResponseEntity<?> delete(@PathVariable Long id) {
         return ResponseEntity.ok(service.delete(id));
     }
-
 }
