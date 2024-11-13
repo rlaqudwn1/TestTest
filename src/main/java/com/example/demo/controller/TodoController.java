@@ -29,6 +29,9 @@ public class TodoController {
         return ResponseEntity.ok(service.create(dto));
     }
 
-
+    @DeleteMapping("")
+    public ResponseEntity<?> delete(@RequestParam("id") Long id) {
+        return ResponseEntity.ok(service.delete(id));
+    }
 
 }

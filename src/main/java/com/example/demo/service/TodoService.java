@@ -30,4 +30,8 @@ public class TodoService {
                 .map(TodoDto::of)
                 .toList();
     }
+    public String delete(Long id) {
+        repository.deleteById(id);
+        return "Deleted";
+    }
 }
